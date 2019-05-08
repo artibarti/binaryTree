@@ -26,6 +26,7 @@ class BinaryTree {
         actualNode = actualNode -> getLeft();
       } else {
         actualNode -> setLeft(new Node(0));
+        actualNode = &root;
       }
 
     } else if (value == 1) {
@@ -33,6 +34,7 @@ class BinaryTree {
         actualNode = actualNode -> getRight();
       } else {
         actualNode -> setRight(new Node(1));
+        actualNode = &root;
       }
     } else {
       throw std::invalid_argument("Argument should be 0 or 1");
